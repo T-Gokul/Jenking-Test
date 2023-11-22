@@ -1,6 +1,7 @@
 name: Token Expiry Alert
 
 on:
+  push:
   schedule:
     - cron: '* * * * *'
 
