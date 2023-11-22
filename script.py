@@ -10,6 +10,7 @@ headers = {
 response = requests.get('https://api.github.com/user', headers=headers)
 
 token_info = response.json()
+print(token_info)
 expires_at_str = token_info.get('updated_at')
 print(expires_at_str)
 updated_at = datetime.strptime(expires_at_str, "%Y-%m-%dT%H:%M:%SZ")
