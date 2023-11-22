@@ -12,7 +12,7 @@ response = requests.get('https://api.github.com/user', headers=headers)
 token_info = response.json()
 expires_at_str = token_info.get('updated_at')
 
-updated_at = datetime.strptime(expires_at_str)
+updated_at = datetime.strptime(expires_at_str, "%Y-%m-%dT%H:%M:%SZ")
 now = datetime.now()
 result = now - updated_at
 result = result.days       
