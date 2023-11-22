@@ -3,7 +3,7 @@ from datetime import datetime
 print("Testing")
 
 headers = {
-    'Authorization': 'token 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',
+    'Authorization': 'token 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',
     'Accept': 'application/vnd.github.v3+json'
 }
 
