@@ -1,6 +1,6 @@
 import requests
 from datetime import datetime
-
+print("Testing")
 def get_token_expiration(token):
     headers = {
         'Authorization': f'token {token}',
